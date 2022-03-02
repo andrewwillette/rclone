@@ -284,8 +284,8 @@ error.
 If you set it to 0 then it will wait forever.`,
 			Advanced: true,
 		}, {
-			Name:    config.ConfigDescription,
-			Help:    config.ConfigDescriptionHelp,
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
 			Advanced: true,
 		}},
 	})

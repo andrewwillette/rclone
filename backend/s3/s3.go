@@ -1549,8 +1549,8 @@ This is usually set to a CloudFront CDN URL as AWS S3 offers
 cheaper egress for data downloaded through the CloudFront network.`,
 			Advanced: true,
 		}, {
-			Name: config.ConfigDescription,
-			Help: config.ConfigDescriptionHelp,
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
 			Advanced: true,
 		},
 		}})

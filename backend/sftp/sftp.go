@@ -249,8 +249,8 @@ Set to 0 to keep connections indefinitely.
 `,
 			Advanced: true,
 		}, {
-			Name:    config.ConfigDescription,
-			Help: config.ConfigDescriptionHelp,
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
 			Advanced: true,
 		}},
 	}

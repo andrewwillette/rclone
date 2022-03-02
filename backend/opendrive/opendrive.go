@@ -91,8 +91,8 @@ increase memory use.`,
 			Default:  10 * fs.Mebi,
 			Advanced: true,
 		}, {
-			Name: config.ConfigDescription,
-			Help: config.ConfigDescriptionHelp,
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
 			Advanced: true,
 		}},
 	})

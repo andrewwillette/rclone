@@ -125,8 +125,8 @@ You can set multiple headers, e.g. '"Cookie","name=value","Authorization","xxx"'
 			Default:  fs.CommaSepList{},
 			Advanced: true,
 		}, {
-			Name: config.ConfigDescription,
-			Help: config.ConfigDescriptionHelp,
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
 			Advanced: true,
 		}},
 	})

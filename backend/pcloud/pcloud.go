@@ -131,8 +131,8 @@ with rclone authorize.
 				Help:  "EU region",
 			}},
 		}, {
-			Name: config.ConfigDescription,
-			Help: config.ConfigDescriptionHelp,
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
 			Advanced: true,
 		}}...),
 	})

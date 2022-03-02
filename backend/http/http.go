@@ -91,8 +91,8 @@ sizes of any files, and some files that don't exist may be in the listing.`,
 			Default:  false,
 			Advanced: true,
 		}, {
-			Name: config.ConfigDescription,
-			Help: config.ConfigDescriptionHelp,
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
 			Advanced: true,
 		}},
 	}

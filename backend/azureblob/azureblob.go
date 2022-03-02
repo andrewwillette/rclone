@@ -261,8 +261,8 @@ This option controls how often unused buffers will be removed from the pool.`,
 			Default:  false,
 			Advanced: true,
 		}, {
-			Name: config.ConfigDescription,
-			Help: config.ConfigDescriptionHelp,
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
 			Advanced: true,
 		}},
 	})
