@@ -166,6 +166,10 @@ If this is set and no password is supplied then rclone will ask for a password
 				Value: "Ctl,LeftPeriod,Slash",
 				Help:  "VsFTPd can't handle file names starting with dot",
 			}},
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}},
 	})
 }

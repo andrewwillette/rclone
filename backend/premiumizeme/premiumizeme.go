@@ -99,6 +99,10 @@ This is not normally used - use oauth instead.
 				encoder.EncodeBackSlash |
 				encoder.EncodeDoubleQuote |
 				encoder.EncodeInvalidUtf8),
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}},
 	})
 }

@@ -280,6 +280,10 @@ At the time of writing this only works with OneDrive personal paid accounts.
 				encoder.EncodeRightSpace |
 				encoder.EncodeWin |
 				encoder.EncodeInvalidUtf8),
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}}...),
 	})
 }

@@ -176,13 +176,9 @@ browser.`,
 				Value: "com.au",
 				Help:  "Australia",
 			}}}, {
-			Name:     config.ConfigEncoding,
-			Help:     config.ConfigEncodingHelp,
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
 			Advanced: true,
-			Default: (encoder.EncodeZero |
-				encoder.EncodeCtl |
-				encoder.EncodeDel |
-				encoder.EncodeInvalidUtf8),
 		}}...),
 	})
 }

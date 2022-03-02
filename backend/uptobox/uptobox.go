@@ -56,6 +56,10 @@ func init() {
 				encoder.EncodeLtGt |
 				encoder.EncodeLeftSpace |
 				encoder.EncodeInvalidUtf8),
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}},
 	})
 }

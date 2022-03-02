@@ -260,6 +260,10 @@ This option controls how often unused buffers will be removed from the pool.`,
 			Help:     `If set, do not do HEAD before GET when getting objects.`,
 			Default:  false,
 			Advanced: true,
+		}, {
+			Name: config.ConfigDescription,
+			Help: config.ConfigDescriptionHelp,
+			Advanced: true,
 		}},
 	})
 }

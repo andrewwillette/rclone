@@ -14,6 +14,7 @@ import (
 
 	"github.com/rclone/rclone/fs"
 	"github.com/rclone/rclone/fs/cache"
+	"github.com/rclone/rclone/fs/config"
 	"github.com/rclone/rclone/fs/config/configmap"
 	"github.com/rclone/rclone/fs/config/configstruct"
 	"github.com/rclone/rclone/fs/fspath"
@@ -47,6 +48,10 @@ func init() {
 			Advanced: true,
 			Default:  fs.SizeSuffix(0),
 			Help:     "Auto-update checksum for files smaller than this size (disabled by default).",
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}},
 	})
 }

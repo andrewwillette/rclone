@@ -54,6 +54,10 @@ datanodes. Possible values are 'authentication', 'integrity' and
 			Help:     config.ConfigEncodingHelp,
 			Advanced: true,
 			Default:  (encoder.Display | encoder.EncodeInvalidUtf8 | encoder.EncodeColon),
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}},
 	}
 	fs.Register(fsi)

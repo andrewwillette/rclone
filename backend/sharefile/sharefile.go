@@ -217,6 +217,10 @@ be set manually to something like: https://XXX.sharefile.com
 				encoder.EncodeLeftSpace |
 				encoder.EncodeLeftPeriod |
 				encoder.EncodeInvalidUtf8),
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}},
 	})
 }

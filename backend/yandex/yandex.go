@@ -78,6 +78,10 @@ func init() {
 			// it doesn't seem worth making an exception for this
 			Default: (encoder.Display |
 				encoder.EncodeInvalidUtf8),
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}}...),
 	})
 }

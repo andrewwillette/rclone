@@ -125,6 +125,10 @@ underlying S3 storage.`,
 			// Encode invalid UTF-8 bytes as json doesn't handle them properly.
 			Default: (encoder.Base |
 				encoder.EncodeInvalidUtf8),
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}}...),
 	})
 }

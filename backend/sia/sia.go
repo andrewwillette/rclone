@@ -69,6 +69,10 @@ Sia daemon requires the 'Sia-Agent' user agent by default for security`,
 				encoder.EncodeQuestion |
 				encoder.EncodeDot |
 				encoder.EncodeSlash,
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		},
 		}})
 }

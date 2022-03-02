@@ -208,6 +208,10 @@ Supported quirks: atomicmkdir binlist unknowndirs`,
 				encoder.EncodeWin | // :?"*<>|
 				encoder.EncodeBackSlash |
 				encoder.EncodeInvalidUtf8),
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}},
 	})
 }

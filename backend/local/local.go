@@ -197,6 +197,10 @@ enabled, rclone will no longer update the modtime after copying a file.`,
 			Help:     config.ConfigEncodingHelp,
 			Advanced: true,
 			Default:  encoder.OS,
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}},
 	}
 	fs.Register(fsi)

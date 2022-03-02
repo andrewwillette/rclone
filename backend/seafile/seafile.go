@@ -106,6 +106,10 @@ func init() {
 				encoder.EncodeBackSlash |
 				encoder.EncodeDoubleQuote |
 				encoder.EncodeInvalidUtf8),
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}},
 	})
 }

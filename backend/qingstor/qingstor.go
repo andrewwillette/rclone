@@ -120,6 +120,10 @@ this may help to speed up the transfers.`,
 			Default: (encoder.EncodeInvalidUtf8 |
 				encoder.EncodeCtl |
 				encoder.EncodeSlash),
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}},
 	})
 }

@@ -119,6 +119,10 @@ func init() {
 			Default: (encoder.Display |
 				encoder.EncodeWin | // :?"*<>|
 				encoder.EncodeInvalidUtf8),
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}},
 	})
 }

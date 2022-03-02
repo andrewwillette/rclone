@@ -90,6 +90,10 @@ Note that these chunks are buffered in memory so increasing them will
 increase memory use.`,
 			Default:  10 * fs.Mebi,
 			Advanced: true,
+		}, {
+			Name: config.ConfigDescription,
+			Help: config.ConfigDescriptionHelp,
+			Advanced: true,
 		}},
 	})
 }

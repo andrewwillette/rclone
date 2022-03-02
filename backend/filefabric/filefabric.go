@@ -128,6 +128,10 @@ Don't set this value - rclone will set it automatically.
 			Advanced: true,
 			Default: (encoder.Display |
 				encoder.EncodeInvalidUtf8),
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}},
 	})
 }

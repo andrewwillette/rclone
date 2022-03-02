@@ -175,6 +175,10 @@ func init() {
 			Default: (encoder.Base |
 				encoder.EncodeCtl |
 				encoder.EncodeInvalidUtf8),
+		}, {
+			Name:     config.ConfigDescription,
+			Help:     config.ConfigDescriptionHelp,
+			Advanced: true,
 		}},
 	})
 }

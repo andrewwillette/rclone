@@ -1548,6 +1548,10 @@ See: https://github.com/rclone/rclone/issues/4673, https://github.com/rclone/rcl
 This is usually set to a CloudFront CDN URL as AWS S3 offers
 cheaper egress for data downloaded through the CloudFront network.`,
 			Advanced: true,
+		}, {
+			Name: config.ConfigDescription,
+			Help: config.ConfigDescriptionHelp,
+			Advanced: true,
 		},
 		}})
 }

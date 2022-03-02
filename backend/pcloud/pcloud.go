@@ -130,6 +130,10 @@ with rclone authorize.
 				Value: "eapi.pcloud.com",
 				Help:  "EU region",
 			}},
+		}, {
+			Name: config.ConfigDescription,
+			Help: config.ConfigDescriptionHelp,
+			Advanced: true,
 		}}...),
 	})
 }

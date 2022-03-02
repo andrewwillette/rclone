@@ -69,6 +69,10 @@ copy operations.`,
 	Advanced: true,
 	Default: (encoder.EncodeInvalidUtf8 |
 		encoder.EncodeSlash),
+}, {
+	Name:     config.ConfigDescription,
+	Help:     config.ConfigDescriptionHelp,
+	Advanced: true,
 }}
 
 // Register with Fs

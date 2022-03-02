@@ -58,6 +58,12 @@ const (
 
 	// ConfigAuthNoBrowser indicates that we do not want to open browser
 	ConfigAuthNoBrowser = "config_auth_no_browser"
+
+	// ConfigDescription is the description of the configuration
+	ConfigDescription = "description"
+
+	// ConfigDescriptionHelp is the help for the ConfigDescription
+	ConfigDescriptionHelp = "The description for the configuration"
 )
 
 // Storage defines an interface for loading and saving config to

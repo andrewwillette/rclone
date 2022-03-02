@@ -128,6 +128,11 @@ func init() {
 				Help:     "Encryption passphrase.\n\nTo access existing objects enter passphrase used for uploading.",
 				Provider: newProvider,
 			},
+			{
+				Name:     config.ConfigDescription,
+				Help:     config.ConfigDescriptionHelp,
+				Advanced: true,
+			},
 		},
 	})
 }
