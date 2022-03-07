@@ -60,6 +60,20 @@ func init() {
 		Description: "Put.io",
 		NewFs:       NewFs,
 		Config: func(ctx context.Context, name string, m configmap.Mapper, config fs.ConfigIn) (*fs.ConfigOut, error) {
+			if config.State == "" {
+				return &fs.ConfigOut{
+					State: "oauth",
+					Option: &fs.Option{
+						Name:     "description",
+						Help:     "The description for the configuration",
+						Advanced: true,
+						Required: false,
+					},
+				}, nil
+			}
+			if config.State == "oauth" {
+				m.Set("description", config.Result)
+			}
 			return oauthutil.ConfigOut("", &oauthutil.Options{
 				OAuth2Config: putioConfig,
 				NoOffline:    true,
@@ -75,10 +89,6 @@ func init() {
 			Default: (encoder.Display |
 				encoder.EncodeBackSlash |
 				encoder.EncodeInvalidUtf8),
-		}, {
-			Name:     config.ConfigDescription,
-			Help:     config.ConfigDescriptionHelp,
-			Advanced: true,
 		}},
 	})
 }
